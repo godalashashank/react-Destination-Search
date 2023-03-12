@@ -39,10 +39,7 @@ class DestinationSearch extends Component {
         </div>
         <ul className="list-container">
           {searchResults.map(eachItem => (
-            <DestinationItem
-              destinationDetails={eachItem}
-              key={eachItem.uniqueNo}
-            />
+            <DestinationItem destinationDetails={eachItem} key={eachItem.id} />
           ))}
         </ul>
       </div>
